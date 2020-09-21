@@ -1,0 +1,55 @@
+header {
+	height: 20vh;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.logoPresentacion {
+	margin-left: 5px;
+}
+
+.logoPresentacion img {
+	height: 100px;
+	width: 100px;
+}
+
+.menu {
+	width: 100%;
+}
+
+nav {
+	border-top: 1px solid #fff;
+}
+
+main h2 {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: #e8e8e8;
+}
+
+main h3 {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: #e8e8e8;
+	font-size: 45px;
+	text-align: center;
+}
+
+main p {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: #e8e8e8;
+}
+
+.cuerpo-principal {
+	height: 100vh;
+	min-width: 100%;
+	background-image: url("../imagenes/fondo_index.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/*# sourceMappingURL=estilos.css.map */

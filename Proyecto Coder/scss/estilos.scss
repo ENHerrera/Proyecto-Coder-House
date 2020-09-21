@@ -1,0 +1,57 @@
+$letra-pagina: "Lucida Console", "Courier New", monospace;
+
+@mixin sizes($width, $height) {
+	height: $height;
+	width: $width;
+}
+
+@mixin sizes2($width, $height) {
+	height: $height;
+	min-width: $width;
+}
+
+header {
+	@include sizes(100%, 20vh);
+	display: flex;
+	justify-content: space-between;
+}
+
+.logoPresentacion {
+	margin-left: 5px;
+	img {
+		@include sizes(100px, 100px);
+	}
+}
+
+.menu {
+	width: 100%;
+}
+
+nav {
+	border-top: 1px solid #fff;
+}
+
+main {
+	h2 {
+		font-family: $letra-pagina;
+		color: #e8e8e8;
+	}
+	h3 {
+		font-family: $letra-pagina;
+		color: #e8e8e8;
+		font-size: 45px;
+	}
+	p {
+		font-family: $letra-pagina;
+		color: #e8e8e8;
+	}
+}
+
+.cuerpo-principal {
+	@include sizes2(100%, 100vh);
+	background-image: url("../imagenes/fondo_index.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
