@@ -10,6 +10,9 @@ $letra-pagina: "Lucida Console", "Courier New", monospace;
 	min-width: $width;
 }
 
+* {
+	box-sizing: border-box;
+}
 header {
 	@include sizes(100%, 20vh);
 	display: flex;
@@ -36,14 +39,17 @@ main {
 		font-family: $letra-pagina;
 		color: #e8e8e8;
 	}
-	h3 {
-		font-family: $letra-pagina;
-		color: #e8e8e8;
-		font-size: 45px;
-	}
 	p {
 		font-family: $letra-pagina;
 		color: #e8e8e8;
+	}
+	#contact.container {
+		align-items: center;
+	}
+	h3 {
+		font-family: $letra-pagina;
+		color: #e8e8e8;
+		font-size: 2em;
 	}
 }
 
@@ -54,4 +60,27 @@ main {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+form {
+	input,
+	textarea {
+		border: none !important;
+		background: transparent !important;
+		border-bottom: 2px solid #fff !important;
+	}
+	.form-control {
+		color: #fff;
+	}
+}
+
+input.submit-btn {
+	margin-top: 20px;
+	width: 100px;
+	border: 2px solid #fff !important;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	transition: 0.25s ease-in-out 0s;
 }
